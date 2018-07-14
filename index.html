@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Marvel vs. DC Wars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <header><img src="assets/images/slimlogo.png" style="width: 100%"></header>
+
+</head>
+
+<body style="background: url(assets/Images/background.png) no-repeat center fixed; background-size: cover; font-family: Roboto Mono, monospace;">
+    <div class="container">
+        <div class ="row">
+            <div class="col-md-12 text-center">
+                <h1 id="statusUpdate">Select your challenger!</h1>
+                <div class="" id="characterRoster">
+                    <div class="row" id="DC">
+                        <div class="card float-left btn btn-primary availableCharacter charNum_0" id="batman">
+                            <img class="card-img-top" src="assets/Images/batman.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Batman</p>
+                                <p class="card-text health">HP: 1750</p>
+                                <p class="card-text attack">Attack: 90</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-primary availableCharacter charNum_1" id="superman">
+                            <img class="card-img-top" src="assets/Images/superman.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Superman</p>
+                                <p class="card-text health ">HP: 1400</p>
+                                <p class="card-text attack">Attack: 120</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-primary availableCharacter charNum_2" id="wonderWoman">
+                            <img class="card-img-top" src="assets/Images/wonderWoman.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Wonder Woman</p>
+                                <p class="card-text health">HP: 1250</p>
+                                <p class="card-text attack">Attack: 150</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-primary availableCharacter charNum_3" id="aquaman">
+                            <img class="card-img-top" src="assets/Images/aquaman.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Aquaman</p>
+                                <p class="card-text health">HP: 1350</p>
+                                <p class="card-text attack">Attack: 130</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-primary availableCharacter charNum_4" id="theJoker">
+                            <img class="card-img-top" src="assets/Images/theJoker.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">The Joker</p>
+                                <p class="card-text health">HP: 1300</p>
+                                <p class="card-text attack">Attack: ???</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-primary availableCharacter charNum_5" id="catwoman">
+                            <img class="card-img-top" src="assets/Images/catwoman.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Catwoman</p>
+                                <p class="card-text health">HP: 1200</p>
+                                <p class="card-text attack">Attack: 100</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-primary availableCharacter charNum_6" id="poisonIvy">
+                            <img class="card-img-top" src="assets/Images/poisonIvy.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Poison Ivy</p>
+                                <p class="card-text health">HP: 1275</p>
+                                <p class="card-text attack">Attack: 110</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-primary availableCharacter charNum_7" id="darkseid">
+                            <img class="card-img-top" src="assets/Images/darkseid.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Darkseid</p>
+                                <p class="card-text health">HP: 1500</p>
+                                <p class="card-text attack">Attack: 80</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="Marvel">
+                        <div class="card float-left btn btn-danger availableCharacter charNum_8" id="ironman">
+                            <img class="card-img-top" src="assets/Images/ironman.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Ironman</p>
+                                <p class="card-text health">HP: 1650</p>
+                                <p class="card-text attack">Attack: 80</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-danger availableCharacter charNum_9" id="captainAmerica">
+                            <img class="card-img-top" src="assets/Images/captainAmerica.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Captain America</p>
+                                <p class="card-text health">HP: 1800</p>
+                                <p class="card-text attack">Attack: 75</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-danger availableCharacter charNum_10" id="thor">
+                            <img class="card-img-top" src="assets/Images/thor.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Thor</p>
+                                <p class="card-text health">HP: 1450</p>
+                                <p class="card-text attack">Attack: 125</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-danger availableCharacter charNum_11" id="theHulk">
+                            <img class="card-img-top" src="assets/Images/theHulk.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">The Hulk</p>
+                                <p class="card-text health">HP: 2000</p>
+                                <p class="card-text attack">Attack: 50</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-danger availableCharacter charNum_12" id="thanos">
+                            <img class="card-img-top" src="assets/Images/thanos.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Thanos</p>
+                                <p class="card-text health">HP: 1900</p>
+                                <p class="card-text attack">Attack: 65</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-danger availableCharacter charNum_13" id="ultron">
+                            <img class="card-img-top" src="assets/Images/ultron.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Ultron</p>
+                                <p class="card-text health">HP: 1150</p>
+                                <p class="card-text attack">Attack: 200</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-danger availableCharacter charNum_14" id="hela">
+                            <img class="card-img-top" src="assets/Images/hela2.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Hela</p>
+                                <p class="card-text health">HP: 1100</p>
+                                <p class="card-text attack">Attack: 150</p>
+                            </div>
+                        </div>
+                        <div class="card float-left btn btn-danger availableCharacter charNum_15" id="venom">
+                            <img class="card-img-top" src="assets/Images/venom.png" alt="Character Portrait">
+                            <div class="card-body">
+                                <p class="card-text name">Venom</p>
+                                <p class="card-text health">HP: 1600</p>
+                                <p class="card-text attack">Attack: 70</p>
+                            </div>
+                        </div>     
+                    </div>                                                       
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="mainContents">
+    
+            <div class="col-md-4 text-center">
+                <div id="defeatedCharacters">
+                    <h2>Defeated Challengers</h2>
+                </div>
+            </div>
+    
+            <div class="col-md-4 text-center">
+                <div class="row">
+                    <div class="col-md-12 offset-3" id="playerCharacter"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Player</h2>
+                    </div>
+                </div>
+                <hr>
+                <button class="btn btn-danger" id="attackButton">Attack!</button>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Challenger</h2>
+                    </div>
+                </div>
+                <div class ="row">
+                    <div class="col-md-12 offset-3" id="enemyCharacter"></div>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div id="standbyCharacter">
+                    <h2>Challengers Remaining</h2>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button class="btn-lg btn-warning" id="restart">RESET</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
